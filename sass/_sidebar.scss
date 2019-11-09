@@ -1,0 +1,18 @@
+.sidebar {
+	background-color: $color-primary;
+	grid-column: sidebar-start / sidebar-end;
+	grid-row: 1/-1;
+	display: flex;
+	justify-content: center;
+	svg {
+		fill: #fff;
+		width: 6.5rem;
+		cursor: pointer;
+	}
+	@media only screen and (max-width: $bp-large) {
+		grid-column: 1 /-1;
+		grid-row: 1/ 2;
+		align-items: center;
+		justify-content: flex-end;
+	}
+}
